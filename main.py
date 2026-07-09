@@ -3,6 +3,7 @@ from tkinter import ttk
 
 from core.conversor import converter_imagens
 from core.pdf import juntar_pdfs
+from core.separar import separar_pdf
 
 
 # ----------------------
@@ -12,7 +13,7 @@ from core.pdf import juntar_pdfs
 root = tk.Tk()
 
 root.title("Conversor PDF")
-root.geometry("430x200")
+root.geometry("430x270")
 root.resizable(False, False)
 
 
@@ -44,7 +45,7 @@ btn_converter = ttk.Button(
 btn_converter.pack(
     fill="x",
     padx=40,
-    pady=(35, 15)
+    pady=(30, 10)
 )
 
 
@@ -62,7 +63,25 @@ btn_juntar = ttk.Button(
 btn_juntar.pack(
     fill="x",
     padx=40,
-    pady=0
+    pady=10
+)
+
+
+# ----------------------
+# Botão Separar PDF
+# ----------------------
+
+btn_separar = ttk.Button(
+    root,
+    text="✂️ Separar PDF",
+    style="Botao.TButton",
+    command=separar_pdf
+)
+
+btn_separar.pack(
+    fill="x",
+    padx=40,
+    pady=10
 )
 
 
