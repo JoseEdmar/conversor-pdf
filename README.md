@@ -1,170 +1,101 @@
-\# Conversor PDF
+# Conversor PDF
 
+Aplicativo desktop desenvolvido em Python para conversão e gerenciamento de arquivos PDF.
 
+## Funcionalidades
 
-Aplicativo desktop desenvolvido em Python para conversão e organização de arquivos PDF.
+- 🖼️ Converter imagens para PDF usando ImageMagick
+- 📄 Juntar múltiplos arquivos PDF em um único arquivo
+- ✂️ Separar páginas de um PDF em arquivos individuais
+- Interface gráfica simples utilizando Tkinter
+- Processamento totalmente local
 
+## Tecnologias utilizadas
 
+- Python
+- Tkinter
+- ImageMagick
+- pypdf
 
-\## Funcionalidades
-
-
-
-\- 🖼️ Converter imagens para PDF
-
-\- 📄 Juntar múltiplos arquivos PDF em um único arquivo
-
-\- Interface gráfica simples usando Tkinter
-
-\- Processamento totalmente local
-
-
-
-\## Tecnologias utilizadas
-
-
-
-\- Python
-
-\- Tkinter
-
-\- ImageMagick
-
-\- pypdf
-
-
-
-\## Estrutura do projeto
-
-
+## Estrutura do projeto
 
 ```
-
 ConversorPDF/
-
 │
-
 ├── main.py
-
 │
-
 ├── core/
-
 │   ├── conversor.py
-
-│   └── pdf.py
-
+│   ├── pdf.py
+│   └── separar.py
 │
-
 ├── requirements.txt
-
 └── README.md
-
 ```
 
-
-
-\## Instalação
-
-
+## Instalação
 
 Clone o repositório:
 
-
-
 ```bash
-
 git clone https://github.com/JoseEdmar/conversor-pdf.git
-
 ```
 
-
-
-Entre na pasta:
-
-
+Entre na pasta do projeto:
 
 ```bash
-
 cd conversor-pdf
-
 ```
-
-
 
 Crie o ambiente virtual:
 
-
-
 ```bash
-
 python -m venv env
-
 ```
-
-
 
 Ative o ambiente virtual:
 
-
-
 Windows:
 
-
-
 ```bash
-
-env\\Scripts\\activate
-
+env\Scripts\activate
 ```
-
-
 
 Instale as dependências:
 
-
-
 ```bash
-
 pip install -r requirements.txt
-
 ```
 
-
-
-Também é necessário ter o ImageMagick instalado:
-
-
+Também é necessário instalar o ImageMagick:
 
 https://imagemagick.org/
 
-
-
-\## Executando
-
-
-
-Execute:
-
-
+Após a instalação, verifique:
 
 ```bash
-
-python main.py
-
+magick -version
 ```
 
+## Executando
 
+Execute o aplicativo:
 
-\## Autor
+```bash
+python main.py
+```
 
+## Dependências
 
+O arquivo `requirements.txt` contém:
+
+```
+pypdf
+```
+
+## Autor
 
 José Edmar Constantino Gouveia
 
-
-
 GitHub:
-
 https://github.com/JoseEdmar
-
